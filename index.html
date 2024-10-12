@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="container">
+
+            <nav>
+                <h1 id="logo"> <span class="logo">G</span>owtham.</h1>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#services">Source Files</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" style="cursor: pointer;"></i>
+            </nav>
+
+
+
+            <!--header-->
+
+        </div>
+
+        <div class="header-text">
+            <p>Front-end Developer </p>
+            <h1>Hi,I'm <span>Gowtham</span> <br>From Erode</h1>
+        </div>
+
+    </div>
+
+    <!----------------------------about------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/WhatsApp Image 2024-10-08 at 7.48.19 PM.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p> Passionate software developer with a strong enthusiasm for technology, 
+                        constantly seeking opportunities to innovate in real-time projects. Skilled
+                         in developing efficient solutions and eager
+                         to learn and implement new tools and methodologies.
+                          Adept at working in dynamic environments, upgrading skills, and 
+                          driving impactful results. Committed to delivering high-quality, scalable software solutions.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="box-container">
+
+                            <ul>
+                                <li><span>HTML</span><br>Make structure to web</li><br>
+                                <li><span>CSS</span><br>Decorate the web</li><br>
+                                <li><span>JS</span><br>It made Interactive web</li><br>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <div class="box-container">
+                            <ul>
+                                <li><span>2024</span><br> Assistant Football Coach at Hit and Run </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="tab-contents" id="education">
+                        <div class="box-container">
+                            <ul>
+                                <li><span>2022 - 2026</span><br>SNS College Of Engineering, Coimbatore</li><br>
+                                <li><span>2022 - 2022</span><br>Sengunthar Higher Secondary School, Erode</li><br>
+                                <li><span>2021 - 2022</span><br>Municipal high School, Erode</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!--portfolio-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title"> My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                    <img src="img/Screenshot 2024-10-08 204029.png" >
+                    <div class="layer">
+                        <h3>E-Commerce Web</h3>
+                        <p>I created an e-commerce web application using Node.js, featuring secure transactions, user authentication, and a seamless shopping experience.</p>
+                    </div>
+                </div>
+        
+                <div class="work">
+                    <img src="img/Screenshot 2024-10-08 204007.png" >
+                    <div class="layer">
+                        <h3> Portfolio Making</h3>
+                        <p> I developed a personal portfolio website using HTML, CSS, and JavaScript to showcase my projects and skills, enhancing my online presence.!</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="img/Screenshot 2024-10-08 202127.png" >
+                    <div class="layer">
+                        <h3>Food feeder for Fish</h3>
+                        <p> I designed a fish feeder hardware project using Arduino and Python, automating feeding schedules and ensuring optimal nutrition for aquarium fish.</p>
+                    </div>
+                </div>
+                
+            
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <!------Projects services-->
+
+
+    <div id="services">
+        <div class="container">
+            <h1>My Project Files</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h2>E-Commerce Web</h2>
+                    <p>
+                        I developed a  e-commerce web application that allows users to browse products, add items to the cart, and complete secure transactions. Built using React for the frontend, Node.js and Express for the backend, and MongoDB for the database, the platform integrates with payment gateways like Stripe for seamless checkout. I implemented features such as product filtering, user authentication, and order tracking, improving user experience and boosting sales. The project is containerized with Docker for easy deployment. You can explore the project on my GitHub </p>
+                    <a href="https://github.com/gowtham1194/E-Commerce" class="btn">View Code <\> </a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h2>Portfolio Making</h2>
+                    <p>I developed a real-time chat application that enables users to create and join chat rooms seamlessly. Using Node.js I built an efficient messaging system capable of handling real-time communication across multiple users. The project focused on optimizing message delivery and user interface, resulting in a 25% increase in user engagement. I also implemented Docker for containerization, ensuring smooth deployment across various environments. You can explore the project on my GitHub </p>
+                    <a href="https://github.com/gowtham1194/Portfolio" class="btn">View Code <\> </a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-fish"></i>
+                    <h2>Food Feeder For fish</h2>
+                    <p>A smart fish feeder that uses sensors to automate feeding. It ensures precise food delivery, reduces waste, and promotes optimal fish health. Ideal for both commercial and home aquarium.</p>
+                        <a href="https://github.com/gowtham1194/Food-Feeder" class="btn">Source Report </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+ 
+
+<!-------------------------------contact--------------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sgowtham0181@gmail.com</p>
+                <P> <i class="fa-solid fa-phone"></i>+91 9345816636</P>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/gowtham-sd/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/gowtham1194"> <i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <a href="img/resume.pdf" download class="btn">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Sumbit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="copyright">
+    <p>Copyright © Made with  <i class="fa-solid fa-heart"> </i> by <span style="color:#ff004f; font-style:italic;">Gowtham</span> </p>
+</div>
+
+
+</body>
+<script src="index.js"></script>
+
+</html>
